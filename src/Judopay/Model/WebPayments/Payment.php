@@ -21,9 +21,20 @@ class Payment extends Model
             'clientUserAgent'       => DataType::TYPE_STRING,
             'webPaymentOperation'   => 'WebPaymentOperation',
             'currency'              => DataType::TYPE_STRING,
-
+            'expiryDate'            => DataType::TYPE_STRING,
+            'isPayByLink'           => DataType::TYPE_BOOLEAN,
+            'isJudoAccept'          => DataType::TYPE_BOOLEAN,
+            'successUrl'            => DataType::TYPE_STRING,
+            'cancelUrl'             => DataType::TYPE_STRING,
+            'emailAddress'          => DataType::TYPE_STRING,
+            'mobileNumber'          => DataType::TYPE_STRING,
+            'phoneCountryCode'      => DataType::TYPE_STRING,
+            'hideBillingInfo'       => DataType::TYPE_BOOLEAN,
+            'hideReviewInfo'        => DataType::TYPE_BOOLEAN,
+            'allowIncrement'        => DataType::TYPE_BOOLEAN,
             // Inner objects
-            'threeDSecure'           => DataType::TYPE_THREE_D_SECURE_TWO,
+            'threeDSecure'          => DataType::TYPE_THREE_D_SECURE_TWO,
+            'primaryAccountDetails'     => DataType::TYPE_PRIMARY_ACCOUNT_DETAILS,
         );
     protected $requiredAttributes
         = array(
