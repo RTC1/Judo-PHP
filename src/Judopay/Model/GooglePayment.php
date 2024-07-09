@@ -16,7 +16,8 @@ class GooglePayment extends Model
             'yourPaymentReference'  => DataType::TYPE_STRING,
             'amount'                => DataType::TYPE_FLOAT,
             'yourConsumerReference' => DataType::TYPE_STRING,
-            'googlePayWallet'       => DataType::TYPE_GOOGLE_PAY_WALLET
+            'googlePayWallet'       => DataType::TYPE_GOOGLE_PAY_WALLET,
+            'yourPaymentMetaData'   => DataType::TYPE_ARRAY,
         );
     protected $requiredAttributes
         = array(
