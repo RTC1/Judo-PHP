@@ -32,9 +32,10 @@ class Payment extends Model
             'hideBillingInfo'       => DataType::TYPE_BOOLEAN,
             'hideReviewInfo'        => DataType::TYPE_BOOLEAN,
             'allowIncrement'        => DataType::TYPE_BOOLEAN,
+            'cardAddress'           => DataType::TYPE_ARRAY,
             // Inner objects
             'threeDSecure'          => DataType::TYPE_THREE_D_SECURE_TWO,
-            'primaryAccountDetails'     => DataType::TYPE_PRIMARY_ACCOUNT_DETAILS,
+            'primaryAccountDetails' => DataType::TYPE_PRIMARY_ACCOUNT_DETAILS,
         );
     protected $requiredAttributes
         = array(
