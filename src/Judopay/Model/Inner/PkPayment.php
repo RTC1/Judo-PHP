@@ -8,8 +8,7 @@ class PkPayment extends TransmittedField
     protected $requiredAttributes
         = array(
             'token',
-            'token.paymentInstrumentName',
-            'token.paymentNetwork',
+            'token.paymentMethod',
             'token.paymentData',
         );
 }
